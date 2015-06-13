@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 1. 快级元素 以一个快的形式进行展现，跟同级的兄弟依次竖直排列，左右撑满 div-->
+<!-- 2. 行内元素 以普通的DOM节点，横向，排满后自动换行 -->
+
+<h1>快级元素</h1>
+<div><span>第一小块</span><span>第一大块</span></div>
+
+<!-- 块级元素之间的 margin，是上下两个margin的和的相加 -->
+<div style="margin-bottom: 10px">第二块</div>
+<div style="margin-top: 5px;">第三块</div>
+
+<!-- 行内元素的之间的水平margin 是 两个margin 之间的相加 -->
+
+<h1>行内元素</h1>
+<span style="margin-right: 10px;">块一</span>
+<span style="margin-left: 10px;">块二</span>
+<span>块三</span>
+<br>
+<br>
+<!-- 嵌套的盒模型 子块的margin将以父块的内容作为参考-->
+<div style="margin: 100px"> 块1  <div style="margin-top: 20px;margin-left: 20px;margin-right: 20px;margin-bottom: 20px"> 块2</div> </div>
+
+
+<!-- margin 也可以取赋值 -->
+<span>KuaiYi</span><span style="margin-left: -30px">KuaiEr</span>
+
+</body>
+</html>

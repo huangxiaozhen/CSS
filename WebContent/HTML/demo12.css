@@ -1,0 +1,51 @@
+.parent{
+	
+	position:relative;
+	left:40px;
+	background-color: gray;
+	border: 1px gray solid;
+	padding:15px;
+	
+}
+
+.son{
+	/* 相对的是 之前 static 时默认的标准　*/
+	/*   absolute 绝对的 left 和 top 相对于 position 的包含框的位置 */
+	/*  fix  以浏览器的窗口进行定位 */
+	/* position 的 4 个取值 1. 默认的static 2. relative 相对于默认的偏移
+	   3. absolute  相对 包含框的偏移  4. fixed 相对浏览器的便宜 */
+	
+	position:fixed;
+	left:0px;
+	top:0px;
+	background-color: green;
+	border: 1px green solid
+}
+	
+	
+}
+
+.d1{
+	margin:10px;
+	float:left;
+	background-color: green;
+	border: 1px green solid
+	
+}
+
+.d2{
+	margin:10px;
+	float:right;
+	height:50px;
+	background-color: blue;
+	border:1px blue solid;
+	
+}
+
+p{
+	clear:both;  /* 不能左边有悬浮或者是不能右边有悬浮 */
+	margin:10px;
+	background-color: yellow;
+	border:1px yellow solid;
+	
+}

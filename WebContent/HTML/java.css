@@ -1,0 +1,34 @@
+h1{
+	/*
+       CSS 中多行注释的样式和 Java 中相同	  
+	*/
+	
+	color: white;
+	background-color: gray;
+	text-align:center;
+	padding:20px;
+}
+
+img{
+	
+	width:150px;
+	height:180px;
+	float: left;
+	margin:10px;
+	
+}
+
+p{
+	
+	font-size: 14px;
+	text-indent: 2em;
+	line-height: 1.5;
+	
+}
+
+body{
+	
+	margin: 0px;
+	background-color: #DFDFDF;
+	
+}

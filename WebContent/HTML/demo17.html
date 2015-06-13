@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>创建简单的导航栏</title>
+
+<style type="text/css">
+/* 竖
+#navig ation {
+	width: 120px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	text-align: right;
+}
+*/
+
+#navigation {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	text-align: center;
+}
+
+#navigation ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 
+#navigation li
+{  border-bottom:1px green solid
+}
+*/
+
+#navigation li
+{  border-bottom:1px green solid;
+   float: left;
+   width: 120px;
+  
+}
+
+
+
+#navigation li a
+{
+  display:block;
+  height: 1em;
+  padding:5px 5px 5px 0.5em;
+  text-decoration: none;
+
+}
+
+#navigation li a:LINK,#navigation li a:VISITED 
+{
+   background-color: #1136c1;
+   color:#ffffff;
+	
+}
+
+#navigation li a:HOVER {
+	background-color#002099;
+	color:#ffff00;
+}
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+	<!-- 创建简单的导航栏 -->
+	<div id="navigation">
+		<ul>
+			<li><a href="http://www.baidu.com"> 主页 </a></li>
+			<li><a href="http://www.baidu.com"> 我的博客</a></li>
+			<li><a href="http://www.baidu.com">我的相册</a></li>
+			<li><a href="http://www.baidu.com">留言</a></li>
+			<li><a href="http://www.baidu.com">关于我</a></li>
+		</ul>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> CSS 样式 </title>
+
+<!-- 需要使用 link 来链接 css 的文件 -->
+<link href="color.css" type="text/css" rel="stylesheet">
+
+<!-- 总结:后面的样式会覆盖前面的样式 内部的样式会覆盖外部的样式 -->
+
+</head>
+
+<body>
+
+<!-- 主要讲解在哪里可以写 css 的样式 -->
+<!-- 1. 行内的样式 行内样式的缺点：不好维护 特别处理的一些，可以写在行内-->
+<p style="color: red;font-size: 20px;">你好</p>
+
+<!-- 2. 内嵌式样式 -->
+<h1>你好</h1>
+<h1>你好</h1>
+
+<!-- 3.链接式 CSS 的样式都放在特定的文件中 -->
+<p class="p1">谢谢</p>
+<p class="p1">谢谢</p>
+
+<!-- 4. 导入式 在加载 html 的时候，直接把所有的 css 样式都加载进来 链接式是要用来哪些
+css 才进行加载  -->
+
+
+<!-- 5. 三种样式的优先级进行比较 -->
+<p>行内样式&gt;内联式&gt;链接式</p>
+
+</body>
+</html>

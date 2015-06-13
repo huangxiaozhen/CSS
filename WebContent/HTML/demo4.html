@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>选择器</title>
+<link href="select.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--  1. 交集选择器 -->
+<p> p1 </p>
+<p> p2 </p>
+<p class="c"> p3 </p>
+<h1 class="c"> h1 </h1>
+<h2> h2 </h2>
+<div> d1 </div>
+<br>
+
+<!-- 并集选择器 p,.c 可以应用多个标签，类使用同一个样式 -->
+
+<!-- 后代选择器 p span 只要span是 P 的子集，span就会应用 p span 样式 -->
+<div>
+一代 
+<p> 
+二代
+<span>
+三代
+</span>
+</p>
+
+</div>
+
+<span>
+您好
+</span>
+<br>
+
+<span>
+您好
+</span>
+
+
+
+<!-- 子选择器 div>span 只有 div 的直接子类 span 才能应用这个颜色规划i -->
+<div>
+   <span>儿子</span>
+   <p><span>儿子</span></p>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

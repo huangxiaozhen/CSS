@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 表格加边框用 CSS 来写 -->
+<style type="text/css">
+
+  .t
+  {
+     border:1px gray solid;
+     border-spacing: 0px; /* 两列之间的距离 */
+     border-collapse: collapse; /* 两列之间的边框是否重合还是分离 */
+     width: 500px;  
+     table-layout: fixed;  /* 如果设置成fix不会 */
+  }
+  
+  .t td
+  {
+    border:1px gray solid;
+    padding:5px;
+  }
+  
+  tr
+  {
+     background-color: green;
+  }  
+  
+  .t tr.even
+  {
+     background-color: gray;
+  }  
+  
+  .th+td 
+  {
+     text-align: center;
+     color: red;
+  
+  }
+  
+  <!--设置各种鼠标经过时的样式 -->
+  
+  tr:HOVER {
+	background-color: aqua;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<table class="t">
+
+		<caption>学生信息</caption>
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>号码</th>
+				<th>地址</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+			    <!-- /* 根据单元格的内容自动调整宽度，不受设置的宽度的限制 */ -->
+				<td>学生11111111	111111</td>
+				<td>号码1</td>
+				<td>地址1</td>
+			</tr>
+
+			<tr class="even">
+				<td>学生2</td>
+				<td>号码2</td>
+				<td>地址2</td>
+			</tr>
+
+			<tr>
+				<td>学生3</td>
+				<td>号码3</td>
+				<td>地址3</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td>总共</td>
+				<td colspan="2">3名学生</td>
+			</tr>
+		</tfoot>
+
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 直接在head中写 CSS 
+p  是标记选择器 -->
+<!--声明 key value -->
+<!-- css 中的选择器有三个  1. 标记选择器  这个标记指的是 html 中标签的标记
+ 例如： p 标签 h1 标签等  2. 类别选择器 以 .开头 类别选择器是用的最多的选择器
+ 3. id 选择器 对html 中的某个元素节点命名 ID,然后用#来表示一个id 选择器
+ id 的标识是唯一的-->
+<style type="text/css">
+p {
+	color: red;
+	font-size: 20px;
+}
+
+.r {
+	color: red;
+	font-size: 20px;
+}
+
+.b {
+	color: green;
+	font-size: 20px;
+}
+
+#p1 {
+color: blue;
+	font-size: 20px;
+}
+
+#p2{
+color:gray;
+font-size: 20px;
+
+}
+</style>
+</head>
+<body>
+
+	<p class="r">标题</p>
+	<p class="b">标题</p>
+	<p class="r">标题</p>
+	<p class="b">标题</p>
+
+	<p id="p1">标题</p>
+	<p id="p2">标题</p>
+</body>
+</html>

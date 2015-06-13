@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+  p{
+  
+  color: gray;
+  
+  }
+  
+  #p1{
+  color: blue;
+  
+  }
+  
+  .c{
+  
+  color: green;
+  }
+
+</style>
+
+</head>
+<body>
+
+<!-- 在一个节点上 选择某一个样式，则它的字节点也拥有这个样式
+     PS: 并不是每一个样式都适用这个规则 -->
+
+	<h1>java</h1>
+	<ul>
+		<li class="c">  网页
+			<ul >
+				<li>html</li>
+				<li>css</li>
+				<li>javascript</li>
+			</ul>
+
+		</li>
+		<li>网页2</li>
+		<li>网页3</li>
+	</ul>
+	
+	<!-- css 的层叠样式的规则  行内样式 > ID选择样式 > 类别样式 > 标示样式 -->
+	<p>第一行文本</p>
+	<p class="c">第二行文本</p>
+	<p class="c" id="p1">第三行文本</p>
+	<p class="c" id="p1" style="color:orange;">第四行文本</p>
+	
+	
+	
+
+</body>
+</html>
